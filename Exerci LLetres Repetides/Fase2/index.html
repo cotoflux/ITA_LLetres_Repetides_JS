@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici Lletres Repetides Fase1</title>
+</head>
+<body>
+<div id="imrimeixNom"></div>
+
+<script>
+
+var nom = ['N', 'u', 'r', 'i', 'a']; 
+var i;
+var letra;
+    for(i = 0; i<nom.length; i++){
+        lletra = nom[i]
+        document.getElementById("imrimeixNom").innerHTML += lletra + " ";
+
+        if (lletra=='a' || lletra=='e' || lletra=='i'|| lletra=='o' || lletra=='u'){
+            console.log("La lletra " + "'" + lletra + "'" + " es una VOCAL.");
+        } else if (lletra!='a' || lletra!='e' || lletra!='i'|| lletra!='o' || lletra!='u'){
+            console.log("La lletra " + "'" + lletra + "'" + " es una CONSONANT.");
+        } else {
+            console.log ("Els noms de persones no contenen números");
+        }
+    }   
+   
+    
+
+</script>
+    
+</body>
+</html>
